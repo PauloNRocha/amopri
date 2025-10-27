@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0 - 2024-10-27
+- Adição de `backend/requirements-dev.txt` com dependências de testes (pytest e pytest-django).
+- Configuração do ambiente de testes via `pytest.ini` e `conftest.py` para reconhecer o pacote Django.
+- Criação do workflow de CI `.github/workflows/ci.yml` executando `manage.py check` e `pytest`.
+
 ## 0.1.2 - 2024-10-27
 - Correção no carregamento das configurações `DEFAULT_MONTHLY_FEE` e `DEFAULT_DUE_DAY`, evitando uso de métodos inexistentes em `django-environ`.
 
