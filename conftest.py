@@ -4,6 +4,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+pytest_plugins = ["pytest_django"]
+
 # Garante que o pacote Django esteja disponível para importação nos testes.
 PROJECT_ROOT = Path(__file__).resolve().parent
 BACKEND_PATH = PROJECT_ROOT / "backend"

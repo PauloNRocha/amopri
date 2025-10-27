@@ -3,6 +3,7 @@
 ## 0.2.1 - 2024-10-27
 - Ajuste para garantir que os diretórios raiz e `backend/` sejam adicionados ao `PYTHONPATH` (manage.py/conftest), permitindo importar `backend.amopri` em execuções locais e na pipeline.
 - Atualização das referências de configuração (settings, ASGI/WSGI, pytest) para o pacote `backend.amopri`.
+- Carregamento explícito do plugin `pytest-django` no `conftest.py` para evitar avisos em ambientes onde a auto-detecção falha.
 
 
 ## 0.2.0 - 2024-10-27
