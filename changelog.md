@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.2 - 2024-10-27
+- Correção no carregamento das configurações `DEFAULT_MONTHLY_FEE` e `DEFAULT_DUE_DAY`, evitando uso de métodos inexistentes em `django-environ`.
+
 ## 0.1.1 - 2024-10-27
 - Configuração inicial do projeto Django: `manage.py`, arquivos `settings`, `urls`, `wsgi` e `asgi`.
 - Ajuste do app `associados` com `AppConfig` e módulo de URLs básico.

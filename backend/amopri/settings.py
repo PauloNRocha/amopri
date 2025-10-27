@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
+from decimal import Decimal
 
 import environ
 
@@ -94,5 +95,5 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Configurações específicas do projeto
-DEFAULT_MONTHLY_FEE = env.decimal("DEFAULT_MONTHLY_FEE", default=30.00)
-DEFAULT_DUE_DAY = env.int("DEFAULT_DUE_DAY", default=10)
+DEFAULT_MONTHLY_FEE = Decimal(str(env("DEFAULT_MONTHLY_FEE")))
+DEFAULT_DUE_DAY = int(env("DEFAULT_DUE_DAY"))
