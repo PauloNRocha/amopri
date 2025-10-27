@@ -51,7 +51,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "amopri.urls"
+ROOT_URLCONF = "backend.amopri.urls"
 
 TEMPLATES = [
     {
@@ -69,8 +69,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "amopri.wsgi.application"
-ASGI_APPLICATION = "amopri.asgi.application"
+WSGI_APPLICATION = "backend.amopri.wsgi.application"
+ASGI_APPLICATION = "backend.amopri.asgi.application"
 
 # Banco de dados via DATABASE_URL (padrão sqlite)
 DATABASES = {

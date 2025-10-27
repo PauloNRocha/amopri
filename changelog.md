@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1 - 2024-10-27
+- Ajuste do projeto para usar o pacote `backend.amopri` em todas as referências de configuração (manage, settings, ASGI/WSGI e pytest), garantindo importação correta em ambientes de CI/CD.
+
+
 ## 0.2.0 - 2024-10-27
 - Adição de `backend/requirements-dev.txt` com dependências de testes (pytest e pytest-django).
 - Configuração do ambiente de testes via `pytest.ini` e `conftest.py` para reconhecer o pacote Django.
