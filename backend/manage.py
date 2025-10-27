@@ -10,8 +10,12 @@ from pathlib import Path
 def main() -> None:
     """Run administrative tasks."""
     backend_dir = Path(__file__).resolve().parent
-    if str(backend_dir) not in sys.path:
-        sys.path.insert(0, str(backend_dir))
+    project_root = backend_dir.parent
+
+    for path in (project_root, backend_dir):
+        path_str = str(path)
+        if path_str not in sys.path:
+            sys.path.insert(0, path_str)
 
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.amopri.settings")
     try:

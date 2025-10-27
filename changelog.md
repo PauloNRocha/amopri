@@ -1,7 +1,8 @@
 # Changelog
 
 ## 0.2.1 - 2024-10-27
-- Ajuste do projeto para usar o pacote `backend.amopri` em todas as referências de configuração (manage, settings, ASGI/WSGI e pytest), garantindo importação correta em ambientes de CI/CD.
+- Ajuste para garantir que os diretórios raiz e `backend/` sejam adicionados ao `PYTHONPATH` (manage.py/conftest), permitindo importar `backend.amopri` em execuções locais e na pipeline.
+- Atualização das referências de configuração (settings, ASGI/WSGI, pytest) para o pacote `backend.amopri`.
 
 
 ## 0.2.0 - 2024-10-27
