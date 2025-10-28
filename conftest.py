@@ -1,6 +1,7 @@
 """Pytest configuration helpers."""
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
@@ -14,6 +15,9 @@ else:
 # Garante que o pacote Django esteja disponível para importação nos testes.
 PROJECT_ROOT = Path(__file__).resolve().parent
 BACKEND_PATH = PROJECT_ROOT / "backend"
+
+# Define o módulo de settings para testes.
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.amopri.settings")
 
 for path in (PROJECT_ROOT, BACKEND_PATH):
     if path.exists():
