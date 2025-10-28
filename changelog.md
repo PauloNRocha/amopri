@@ -1,7 +1,5 @@
 # Changelog
 
-# Changelog
-
 ## 0.3.0 - 2024-10-27
 - Implementação dos modelos principais (`Member`, `Plan`, `Invoice`) e geração da migração inicial.
 - Configuração do Django Admin com ações de marcação de pagamento/cancelamento.
