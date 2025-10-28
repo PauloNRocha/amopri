@@ -1,18 +1,15 @@
 # Changelog
 
-# Changelog
+## 0.2.3 - 2024-10-27
+- Definição do `DJANGO_SETTINGS_MODULE` diretamente no `conftest.py` e remoção da configuração em `pytest.ini` para evitar avisos quando o plugin não estiver instalado; mantém detecção automática do Django nos testes.
 
 ## 0.2.2 - 2024-10-27
 - Carregamento condicional do plugin `pytest-django` no `conftest.py`, evitando falhas quando não estiver instalado, mas utilizando-o sempre que disponível.
-
-## 0.2.3 - 2024-10-27
-- Definição do `DJANGO_SETTINGS_MODULE` diretamente no `conftest.py` e remoção da configuração em `pytest.ini` para evitar avisos quando o plugin não estiver instalado; mantém detecção automática do Django nos testes.
 
 ## 0.2.1 - 2024-10-27
 - Ajuste para garantir que os diretórios raiz e `backend/` sejam adicionados ao `PYTHONPATH` (manage.py/conftest), permitindo importar `backend.amopri` em execuções locais e na pipeline.
 - Atualização das referências de configuração (settings, ASGI/WSGI, pytest) para o pacote `backend.amopri`.
 - Carregamento explícito do plugin `pytest-django` no `conftest.py` para evitar avisos em ambientes onde a auto-detecção falha.
-
 
 ## 0.2.0 - 2024-10-27
 - Adição de `backend/requirements-dev.txt` com dependências de testes (pytest e pytest-django).
