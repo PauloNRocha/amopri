@@ -1,5 +1,13 @@
 # Changelog
 
+# Changelog
+
+## 0.3.0 - 2024-10-27
+- Implementação dos modelos principais (`Member`, `Plan`, `Invoice`) e geração da migração inicial.
+- Configuração do Django Admin com ações de marcação de pagamento/cancelamento.
+- Ajustes no `INSTALLED_APPS`, AppConfig e pytest para refletir o namespace completo (`backend.associados`).
+- Criação/atualização de testes de fumaça garantindo `mark_paid` e registro do app.
+
 ## 0.2.4 - 2024-10-27
 - Adicionado teste de fumaça em `backend/associados/tests/test_smoke.py` para validar o registro do app e garantir pelo menos um teste executado no CI.
 
