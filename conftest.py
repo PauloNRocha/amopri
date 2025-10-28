@@ -4,7 +4,12 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-pytest_plugins = ["pytest_django"]
+try:  # pytest-django pode não estar instalado em ambientes mínimos
+    import pytest_django  # type: ignore  # noqa: F401
+except ImportError:
+    pytest_plugins = []
+else:
+    pytest_plugins = ["pytest_django"]
 
 # Garante que o pacote Django esteja disponível para importação nos testes.
 PROJECT_ROOT = Path(__file__).resolve().parent

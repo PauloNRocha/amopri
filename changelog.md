@@ -1,5 +1,10 @@
 # Changelog
 
+# Changelog
+
+## 0.2.2 - 2024-10-27
+- Carregamento condicional do plugin `pytest-django` no `conftest.py`, evitando falhas quando não estiver instalado, mas utilizando-o sempre que disponível.
+
 ## 0.2.1 - 2024-10-27
 - Ajuste para garantir que os diretórios raiz e `backend/` sejam adicionados ao `PYTHONPATH` (manage.py/conftest), permitindo importar `backend.amopri` em execuções locais e na pipeline.
 - Atualização das referências de configuração (settings, ASGI/WSGI, pytest) para o pacote `backend.amopri`.
