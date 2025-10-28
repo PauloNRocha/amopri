@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.4 - 2024-10-27
+- Adicionado teste de fumaça em `backend/associados/tests/test_smoke.py` para validar o registro do app e garantir pelo menos um teste executado no CI.
+
 ## 0.2.3 - 2024-10-27
 - Definição do `DJANGO_SETTINGS_MODULE` diretamente no `conftest.py` e remoção da configuração em `pytest.ini` para evitar avisos quando o plugin não estiver instalado; mantém detecção automática do Django nos testes.
 
