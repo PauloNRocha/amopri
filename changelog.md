@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.1 - 2024-10-27
+- Adicionado `README.md` na raiz com visão geral, instruções de setup, testes e exemplo de deploy (Docker) ajustado para o namespace `backend.amopri`.
+
 ## 0.3.0 - 2024-10-27
 - Implementação dos modelos principais (`Member`, `Plan`, `Invoice`) e geração da migração inicial.
 - Configuração do Django Admin com ações de marcação de pagamento/cancelamento.
